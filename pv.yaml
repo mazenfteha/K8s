@@ -1,0 +1,11 @@
+kind: PresistentVolume
+apiVersion: v1
+metadata: 
+	name:pv-storage
+spec:
+	capacity:
+		storage:2Gi
+	accessModes:
+		- ReadWriteOnce
+	hostPath:
+		path: "/tmp/data"
